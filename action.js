@@ -76,13 +76,11 @@ if (!isComment) {
   labels = new Set(payload.issue.labels.map(label => label.name));
   newLabels = new Set();
   const shabiWords = [
-    'shabi',
-    'shadiao',
+    '(sha|沙|啥|煞)(b|bi|diao|雕|比|笔)',
     '傻',
-    '沙雕',
     '智障',
     '垃圾',
-    '啥b',
+    '脑瘫',
     'stupid',
   ];
   for (const word of shabiWords) {
@@ -91,12 +89,13 @@ if (!isComment) {
       break;
     }
   }
+  const maWords = '(马|吗|妈|m)'
   const fuckMotherWords = [
     'cnm',
     'fuck.*\\b(mom|mum|mother)\\b',
     '尼玛',
     '去你吗',
-    '(操|草)(你|泥|拟)(马|吗|妈)',
+    '(日|操|草)(你|泥|拟)' + maWords,
   ]
   for (const word of fuckMotherWords) {
     if (new RegExp(word, 'i').test(titleAndBody)) {
@@ -106,7 +105,7 @@ if (!isComment) {
   }
   const motherDiedWords = [
     'nmsl',
-    '你妈死',
+    '你' + maWords + '死',
     '司马',
   ]
   for (const word of motherDiedWords) {
