@@ -94,8 +94,7 @@ if (!isComment) {
     'cnm',
     'fuck.*\\b(mom|mum|mother)\\b',
     '尼玛',
-    '去你吗',
-    '(日|操|草)(你|泥|拟)' + maWords,
+    '(叼|去|日|操|草)(你|泥|拟)' + maWords,
   ]
   for (const word of fuckMotherWords) {
     if (new RegExp(word, 'i').test(titleAndBody)) {
@@ -139,6 +138,9 @@ if (!isComment) {
       break;
     }
   }
+  if (new RegExp('狗', 'i').test(titleAndBody)) {
+    newLabels.add('you-are-dog-argument');
+  }
   if (newLabels.size > 0) {
     newLabels.add('shitpost');
     if (labels.has('not-shitpost')) {
@@ -151,9 +153,10 @@ if (!isComment) {
 // Make the request.
 try {
   console.log(github.context);
+  console.log(github.context.payload.owner);
   const octokit = new github.getOctokit(process.env.GITHUB_TOKEN);
   const new_comment = octokit.issues.createComment({
-    owner: 'cirosantilli',
+    owner: payload.repository.owner.login,
     repo: payload.repository.name,
     issue_number: payload.issue.number,
     body: replyBody,
@@ -161,7 +164,7 @@ try {
   if (!isComment) {
     // Update labels.
     await octokit.issues.update({
-      owner: 'cirosantilli',
+      owner: payload.repository.owner.login,
       repo: payload.repository.name,
       issue_number: payload.issue.number,
       labels: Array.from([...labels, ...newLabels])
