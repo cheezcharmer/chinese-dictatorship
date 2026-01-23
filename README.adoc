@@ -1,10 +1,10 @@
 
 
-
-# ⚠️ DEPRECATED
-
 **Language:**  
 [English](#⚠️-deprecated) | [中文（简体）](#⚠️-已弃用)
+# ⚠️ DEPRECATED
+
+
 
 This repository was created at an earlier stage of my intellectual and professional development, with the intention of exploring themes related to free speech, open discourse, and political expression.
 
