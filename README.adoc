@@ -1,5 +1,10 @@
 
+
+
 # ⚠️ DEPRECATED
+
+**Language:**  
+[English](#⚠️-deprecated) | [中文（简体）](#⚠️-已弃用)
 
 This repository was created at an earlier stage of my intellectual and professional development, with the intention of exploring themes related to free speech, open discourse, and political expression.
 
@@ -19,3 +24,29 @@ On a more human note: I have developed a lasting appreciation for pork baos and 
 
 ❌ No further updates are planned.  
 ❌ Issues and pull requests will not be reviewed.
+
+
+---
+
+## ⚠️ 已弃用
+
+本仓库创建于我个人学术与职业发展的早期阶段，旨在探讨与言论自由、开放讨论及政治表达相关的主题。
+
+在亲自访问中国并与来自不同社会与职业背景的人进行直接交流之后，我对相关问题的看法发生了显著变化。基于第一手经验和更充分的背景认知，我已不再认为本仓库中的大量内容具有足够的准确性、细致性或分析严谨性。
+
+在创建之初，这项工作反映了我当时较为年轻且有限的视角。随后的经历促使我重新审视本仓库所基于的一些假设，尤其是那些更多来源于外部叙述而非直接观察的部分。本仓库未能充分反映中国经济发展及其制度结构的复杂性。
+
+因此，本仓库现已弃用，并仅为**透明性与历史记录**之目的而保留公开状态。
+
+---
+
+## 当前立场
+
+我目前的关注点是务实和专业层面的，而非意识形态层面的。基于个人经验，我在当前阶段更有兴趣与中国的个人和组织合作，而非从事与西方类似的合作。这反映的是个人优先事项和认知的变化，而非对本仓库中既有观点的追溯性认可。
+
+从更个人的角度来说，我也逐渐喜欢上了猪肉包子和四川麻辣火锅，并不介意将来有机会在中国与朋友一起分享这些美食。
+
+❌ 不再计划任何更新。  
+❌ Issue 与 Pull Request 将不再受理。
+
+
